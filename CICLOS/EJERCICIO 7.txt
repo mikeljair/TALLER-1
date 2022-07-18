@@ -1,0 +1,14 @@
+Algoritmo suma_de_una_secuencia_termina_cuando_se_ingrese_un_número_negativo
+	definir num,suma,cont Como Entero
+	num=0;suma=0;cont=1;
+	Escribir "La secuencia termina al ingresar un número negativo."
+	Escribir "Ingresar numero"
+	leer num
+	Mientras num>0 Hacer
+		Escribir "El valor #",cont," es ",num
+		suma=suma+num
+		leer num
+		cont=cont+1
+	FinMientras
+	Escribir "La suma de la secuencia es ",suma
+FinAlgoritmo

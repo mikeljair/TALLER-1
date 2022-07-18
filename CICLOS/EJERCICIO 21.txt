@@ -1,0 +1,19 @@
+Algoritmo secuencia_de_30_numeros_y_sumar_sus_factoriales
+	Definir cont,c,num,factorial,suma Como Entero
+	cont=1;factorial=1;c=1;num=0;suma=0;
+	mientras cont<=30 Hacer
+		Escribir "ingresar numero para determinar su factorial"
+		Leer num
+		Escribir "valor #",cont
+		Mientras c<=num Hacer
+			factorial=factorial*c
+			c=c+1
+		FinMientras
+		Escribir "El factorial de ",num," es ",factorial
+		suma=suma+factorial
+		c=1
+		factorial=1
+		cont=cont+1
+	FinMientras
+	Escribir "La suma de los factoriales es ",suma	
+FinAlgoritmo

@@ -1,0 +1,20 @@
+Algoritmo vector_de_20_numeros_encontrar_el_mayor_y_donde_se_encuentra_ubicado
+	Definir n,mayor_,vector,posicion Como Entero
+	Dimension vector[20]
+	para n=1 Hasta 20 Con Paso 1 Hacer
+		Escribir "Ingresar valor #",n
+	    leer vector(n)
+	FinPara
+	para n=1 Hasta 20 Con Paso 1 Hacer
+		si x==1 Entonces
+			mayor_=vector(n)
+		SiNo
+			si vector(n)>mayor_ Entonces
+				mayor_=vector(n)
+				posicion=n
+			FinSi
+		FinSi
+	FinPara
+	Escribir "El número mayor es ",mayor_
+	Escribir "Se encuentra en la posicion ",posicion
+FinAlgoritmo

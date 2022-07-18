@@ -1,0 +1,19 @@
+Algoritmo secuencia_de_números_y_determinar_cual_es_el_mayor
+	Definir cont,num,n,mayor_ Como Entero
+	n=0;cont=1;num=0;mayor_=0
+	Escribir "Ingresar limite de la secuencia"
+	leer n
+	mientras cont<=n Hacer
+		Escribir "Ingresar valor #",cont
+		leer num
+		si cont==1 Entonces
+			mayor_=num
+		SiNo
+			si num>mayor_ Entonces
+				mayor_=num
+			FinSi
+		FinSi
+		cont=cont+1
+	FinMientras
+	Escribir "El número mayor de la secuencia es ",mayor_
+FinAlgoritmo

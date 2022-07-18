@@ -1,0 +1,23 @@
+Algoritmo ordenar_n_numero_del_vector_a
+	Definir a,x,temp,vector,num Como Entero
+	Escribir "Ingresar limite de numeros en el vector a"
+	leer num
+	Dimension vector[num]
+	para x = 1 Hasta num Con Paso 1 Hacer
+		Escribir "Ingresar valor #",x
+		leer vector(x)
+	FinPara
+	Escribir "VECTOR A"
+	para x = 1 hasta num hacer
+		para a = 1 hasta num Hacer
+			si vector(a) > vector(x)
+				temp = vector(a)
+				vector(a) = vector(x)
+				vector(x) = temp
+			FinSi
+		FinPara
+	FinPara
+	para x = 1 Hasta num Con Paso 1 Hacer
+		Escribir "VECTOR [",X,"] =",vector(x)
+	FinPara
+FinAlgoritmo

@@ -1,0 +1,23 @@
+Algoritmo determinar_si_un_numero_se_encuentra_en_el_vector
+	Definir vector,x,n,num Como Entero
+	Escribir "Ingresar limite de números en el vector"
+	leer n
+	Dimension vector[n]
+	Escribir "Vector A"
+	para x=1 Hasta n Con Paso 1 Hacer
+		Escribir "Ingresar valor #",x
+		Leer vector[x]
+	FinPara
+	Escribir "Ingresar el numero para buscarlo en el vector"
+	leer num
+	c=0
+	para x=1 Hasta n Con Paso 1 Hacer
+		si num==vector[x] Entonces
+			Escribir "El número ",num," se encuentra en el vector A posicion ",x
+		c=1	
+		FinSi
+	FinPara
+	si c==0 Entonces
+		Escribir "El número ",num," no se encuentra en el vector"
+	FinSi
+FinAlgoritmo

@@ -1,0 +1,17 @@
+Algoritmo determinar_si_es_un_número_primo
+	Definir num,c,cont Como Entero
+	c=1;cont=0;num=0
+	Escribir "Ingresar numero"
+	Leer num
+	mientras c<=num Hacer
+		si num%c==0 Entonces
+			cont=cont+1
+		FinSi
+		c=c+1
+	FinMientras
+	Si cont==2 Entonces
+		Escribir num," es un número primo"
+	SiNo
+		Escribir num," no es un número primo"
+	FinSi
+FinAlgoritmo

@@ -1,0 +1,27 @@
+Algoritmo mayor_y_menor_de_una_secuencia_termina_al_ingresar_un_numero_impar
+	Definir cont,num,mayor_,menor_ Como Entero
+	cont=1; num=0; mayor_=0; menor_=0
+	Escribir 'La secuencia termina al ingresar un numero impar.'
+	Escribir 'Ingrese la secuencia de números'
+	Leer num
+	Mientras num>0 Hacer
+		Escribir 'valor #',cont
+		Leer num
+		Si num>0 Entonces
+			Si cont==1 Entonces
+				mayor_=num
+				menor_=num
+			SiNo
+				Si num>mayor_ Entonces
+					mayor_ <- num
+				FinSi
+				Si num<menor_ Entonces
+					menor_=num
+				FinSi
+			FinSi
+		FinSi
+		cont=cont+1
+	FinMientras
+	Escribir 'El número mayor de la secuencia es ',mayor_
+	Escribir 'El número menor de la secuencia es ',menor_
+FinAlgoritmo

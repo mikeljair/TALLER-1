@@ -1,0 +1,13 @@
+Algoritmo producto_mediante_suma
+	Definir num1,num2,suma Como Entero
+	num1=0;num2=0;suma=0
+	Escribir "Ingresar valor #1"
+	leer num1
+	Escribir "Ingresar valor #2"
+	leer num2
+	suma=0
+	para n desde 1 hasta num2 Hacer
+		suma=suma+num1
+	FinPara
+	Escribir "el producto mediante sumas es ",suma
+FinAlgoritmo

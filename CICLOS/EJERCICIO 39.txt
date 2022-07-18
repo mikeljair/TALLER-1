@@ -1,0 +1,26 @@
+Algoritmo de_un_vector_mostrar_números_primos
+	Definir secu,x,c,rs Como Entero
+	Definir ba Como Caracter
+	secu=0;x=0;c=2;ba='v';rs=0
+	Escribir "ingrese limite de numeros del vector"
+	leer secu 
+	Dimension vector[secu]
+	para x = 1 Hasta secu Hacer
+		Escribir "Ingresar valor #",X
+		leer vector[x]
+		mientras c < vector[x] y ba = "v" Hacer
+			si vector[x] mod c == 0 Entonces
+				c = vector[x]
+				ba = "f"
+			FinSi
+			c = c + 1 
+		FinMientras
+		si ba = 'v' Entonces
+			Escribir "El número ",vector[x]," en el vector [",x,"]"," es primo"
+		SiNo
+			Escribir "El número no es primo"
+		FinSi
+		c = 2 
+		ba = "v"
+	FinPara
+FinAlgoritmo

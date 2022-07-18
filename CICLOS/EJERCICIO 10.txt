@@ -1,0 +1,14 @@
+Algoritmo producto_de_n_numeros_finalizar_con_f
+	definir num,producto Como Entero
+	Definir fin_,final Como Caracter
+	producto=1
+	fin_="f"
+	Repetir
+		Escribir "Ingresar valor"
+		leer num
+		producto=producto*num
+		Escribir "¿Desea finalizar? f = si , s = no"
+		leer final
+	Hasta Que final=fin_
+	Escribir "El producto de los numeros es ",producto
+FinAlgoritmo

@@ -1,0 +1,14 @@
+Algoritmo transformar_a_binario
+	Definir num,binario,base,residuo Como Entero
+	base=1;binario=0;num=0;residuo=0
+	Escribir "Ingresar número"
+	Leer num
+	n=num
+	mientras num>0 Hacer
+		residuo=num%2
+		binario=binario+residuo*base
+		num=trunc(num/2)
+		base=base*10
+	FinMientras
+	Escribir "El numero binario de ",n," es ",binario
+FinAlgoritmo

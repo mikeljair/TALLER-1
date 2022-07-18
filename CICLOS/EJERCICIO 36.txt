@@ -1,0 +1,31 @@
+Algoritmo vector_de_20_numeros_sumar_pares_Y_encontrar_mayor_impar
+	Definir suma,menor_,f,x,d Como Entero
+	suma=0;menor_=0;d=0
+	Dimension vector[20]
+	Escribir "El programa solo aceptara la secuencia de 20 números"
+	para  x= 1 Hasta 20 Con Paso 1 Hacer
+		Escribir "Ingresar valor #",x
+		leer vector[x]
+		si vector[x]%2==0 Entonces
+			suma=suma+vector[x]
+		SiNo
+			si x%2<>0 Entonces
+				si vector[x]>menor_ Entonces
+					menor_=vector[x]
+					d=x
+				FinSi
+			FinSi
+		FinSi
+	FinPara
+	si suma=0 Entonces
+		Escribir "No se ingreso ningun número par"
+	SiNo
+		Escribir "la suma de los valores con lectura par es ",suma
+	FinSi
+	si menor_=0 Entonces
+		Escribir "No se ingreso ningun número impar"
+	SiNo
+		Escribir "El número mayor de los valores impares es"
+		Escribir "vector [",d,"] = ",menor_
+	FinSi
+FinAlgoritmo

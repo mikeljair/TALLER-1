@@ -1,0 +1,16 @@
+Algoritmo la_media_de_una_secuencia_termina_al_ingresar_F
+	definir num,media,pr,cont Como Entero
+	Definir fin_,final Como Caracter
+	fin_="f";final="";cont=0;pr=0;media=0;
+	Repetir
+		Escribir "Ingresar valor"
+		leer num
+		pr=pr+num
+		cont=cont+1
+		media=trunc(pr/cont)
+		Escribir "¿Desea finalizar? presione F"
+		Escribir "Si desea continuar presione ENTER"
+		leer final
+	Hasta Que final=fin_
+	Escribir "La media de la secuencia es ",media
+FinAlgoritmo

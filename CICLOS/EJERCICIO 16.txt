@@ -1,0 +1,15 @@
+Algoritmo suma_de_números_pares_en_una_secuencia
+	Definir n,cont,num,suma Como Entero
+	cont=1;n=0;num=0;suma=0
+	Escribir "Ingresar limite de la secuencia"
+	leer n
+	Mientras cont<=n Hacer
+		Escribir "Ingresar valor #",cont
+		leer num
+		si num%2==0
+			suma=suma+num
+		FinSi		
+		cont=cont+1
+	FinMientras
+	Escribir "La suma de los números pares de la secuencia es ",suma
+FinAlgoritmo

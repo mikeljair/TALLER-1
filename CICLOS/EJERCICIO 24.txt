@@ -1,0 +1,35 @@
+Algoritmo n_números_encontrar_mayor_de_los_multiplos_de_5_y_menor_de_los_multiplos_de_3
+	Definir cont,n,num,multiplos_5 Como Entero
+	Definir mayor_,menor_,multiplos_3 Como Entero
+	cont=1;n=0;num=0;mayor_=0;menor_=0;
+	multiplos_5=0;multiplos_3=0
+	Escribir "ingresar limite de la secuencia"
+	Leer n
+	Mientras cont<=n Hacer
+		Escribir "Valor #",cont
+		leer num
+		si num%5=0 Entonces
+			mayor_=num
+			si mayor_>multiplos_5 Entonces
+				multiplos_5=mayor_
+			FinSi
+		FinSi
+		si num%3=0 Entonces
+			menor_=num
+			si menor_<multiplos_3 Entonces
+				multiplos_3=menor_
+			FinSi
+		FinSi
+		cont=cont+1
+	FinMientras
+	si multiplos_5==0 Entonces
+		Escribir "No se ingreso multiplos de 5"
+	SiNo
+		Escribir "El mayor de los multiplos de 5 es ",multiplos_5
+	FinSi
+	si multiplos_3=0 Entonces
+		Escribir "No se ingreso multiplos de 3"
+	SiNo
+		Escribir "El menor de los multiplos de 3 es ",multiplos_3
+	FinSi
+FinAlgoritmo

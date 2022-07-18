@@ -1,0 +1,26 @@
+Algoritmo secuencia_de_20_numeros_mostrar_sus_factoriales
+	Definir num,c,x Como entero
+	Definir factorial Como Real
+	num=0;c=0;factorial=1;x=1;n=20
+	Escribir 'Ingresar un secuencia de 20 numeros'
+	Dimension vector[20]
+	para c = 1 Hasta n Hacer
+		Escribir 'ingrese valor#',c
+		Leer num
+		Si num>0 Entonces
+			factorial=1
+			para x=1 hasta num Hacer
+				factorial=factorial*x
+			FinPara
+			vector[c] = factorial
+		FinSi
+	FinPara
+	Escribir 'Los factoriales son'
+	para c=1 Hasta n Hacer
+		SI vector[c]==0 Entonces
+			Escribir "vector[",c,"] = " "no se puede calcular números negativos"	
+		SiNo
+			Escribir 'vector[',c,'] = ',vector[c]			
+		FinSi
+	FinPara
+FinAlgoritmo

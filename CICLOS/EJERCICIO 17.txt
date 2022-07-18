@@ -1,0 +1,13 @@
+Algoritmo suma_de_números_que_ocupan_posicion_de_lectura_par
+	Definir cont,num,suma Como Entero
+	cont=0;num=0;suma=0
+	mientras cont<30 Hacer
+		cont=cont+1
+		Escribir "Ingresar valor #",cont
+		leer num
+		si cont%2==0 Entonces
+			suma=suma+num
+		FinSi
+	FinMientras
+	Escribir "La suma de los números que ocupan posicion de lectura par es ",suma
+FinAlgoritmo

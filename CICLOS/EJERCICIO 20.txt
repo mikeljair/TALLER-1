@@ -1,0 +1,25 @@
+Algoritmo de_30_números_sumar_solo_los_números_primos
+	Definir num,c,cont,contador,suma,no_importa Como Entero
+	c=1;cont=0;num=0;contador=1;suma=0;no_importa=0
+	mientras contador<=30 hacer
+		Escribir "Ingresar valor #",contador
+		Leer num
+		mientras c<=num Hacer
+			si num%c==0 Entonces
+				cont=cont+1
+			FinSi
+			c=c+1
+		FinMientras
+		c=1
+		si cont==2 Entonces
+			Escribir "El número ",num," es primo"
+			suma=suma+num
+		SiNo
+			no_importa=num
+			Escribir "El número ",no_importa," no es primo"
+		FinSi
+		cont=0
+		contador=contador+1
+	FinMientras
+	Escribir "La suma de los numeros primos es ",suma
+FinAlgoritmo

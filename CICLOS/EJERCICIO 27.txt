@@ -1,0 +1,32 @@
+Algoritmo vector_a_y_b_de_15_numeros_sumar_la_posicion_y_almacenar_en_vector_c
+	Definir vector_a,vector_b,vector_c,x,n,mayor_ Como Entero
+	n=5;
+	Dimension vector_a[n],vector_b[n],vector_c[n]
+	Escribir "Vector 1"
+	para x=1 Hasta n Con Paso 1 Hacer
+		Escribir "Ingresar valor #",x
+		Leer vector_a[x]
+		Escribir "posicion ",x
+	FinPara
+	Escribir "Vetor 2"
+	para x=1 Hasta n Con Paso 1 Hacer
+		Escribir "Ingresar valor #",x
+		Leer vector_b[x]
+		Escribir "posicion ",x
+	FinPara
+	para x=1 Hasta n Con Paso 1 Hacer
+		vector_c[x]=vector_a[x]+vector_b[x]
+		si x=1 Entonces
+			mayor_=vector_c[x]
+		SiNo
+			si vector_c[x]>mayor_ Entonces
+				mayor_=vector_c[x]
+			FinSi
+		FinSi
+	FinPara
+	para x=1 Hasta n Con Paso 1 Hacer
+		Escribir "La suma de los vectores a y b en la posicion ",x," es ",vector_c[x]
+		Escribir "La posicion ",x," del vector c es ",vector_c[x]
+	FinPara
+	Escribir "El múmero mayor del vector c es ",mayor_
+FinAlgoritmo

@@ -1,0 +1,21 @@
+Algoritmo vector_de_20_numeros_ordenar_los_numeros
+	Definir a,x,temp,vector Como Entero
+	Dimension vector[20]
+	para x = 1 Hasta 20 Con Paso 1 Hacer
+		Escribir "Ingresar valor #",x
+		leer vector(x)
+	FinPara
+	Escribir "VECTORES ORDENADOS"
+	para x = 1 hasta 19 hacer
+		para a = 1 hasta 19 Hacer
+			si vector(a) > vector(a+1)
+				temp = vector(a)
+				vector(a) = vector(a+1)
+				vector(a+1) = temp
+			FinSi
+		FinPara
+	FinPara
+	para x = 1 Hasta 20 Con Paso 1 Hacer
+		Escribir "VECTOR [",X,"] =",vector(x)
+	FinPara
+FinAlgoritmo

@@ -1,0 +1,18 @@
+Algoritmo n_números_determinar_el_mayor_de_los_números_pares
+	Definir cont,n,num,mayor_,pares Como Entero
+	cont=1;n=0;num=0;pares=0;mayor_=0
+	Escribir "Ingresar numero de la secuencia"
+	leer n
+	Mientras cont<=n Hacer
+		Escribir "Valor #",cont
+		leer num
+		si num%2=0 Entonces
+			pares=num
+			si pares>mayor_ Entonces
+				mayor_=pares
+			FinSi
+		FinSi
+		cont=cont+1
+	FinMientras
+	Escribir "El número mayor de los pares es ",mayor_
+FinAlgoritmo

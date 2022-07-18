@@ -1,0 +1,14 @@
+Algoritmo secuencia_de_30_numeros_mostrar_suma_y_producto_de_ellos
+	Definir cont,num,suma,producto Como Entero
+	cont=1;num=0;suma=0;producto=1
+	Mientras cont<=30 Hacer
+		Escribir "Ingresar un numero"
+		leer num
+		Escribir "valor # ",cont
+		suma=suma+num
+		producto=producto*num
+		cont=cont+1
+	FinMientras
+	Escribir "La suma es ",suma
+	Escribir "El producto es ",producto
+FinAlgoritmo

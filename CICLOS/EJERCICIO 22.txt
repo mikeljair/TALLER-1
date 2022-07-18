@@ -1,0 +1,27 @@
+Algoritmo calcular_de_n_números_la_suma_de_pares_y_producto_de_multiplos_de_5
+	Definir n,cont,num,suma,producto Como Entero
+	cont=1;producto=1;n=0;suma=0;num=0
+	Escribir "Ingresar limite de la secuencia"
+	leer n
+	Mientras cont<=n
+		Escribir "ingresar valor ",cont
+		leer num
+		si num%2=0 Entonces
+			suma=suma+num			
+		FinSi
+		si num%5=0 Entonces
+			producto=producto*num
+		FinSi
+		cont=cont+1
+	FinMientras
+	si suma=0 Entonces
+		Escribir "No se ingreso ningun numero par"
+	SiNo
+		Escribir "La suma de los números pares es ",suma
+	FinSi
+	si producto=1 Entonces
+		Escribir "No se ingreso ningun multiplo de 5"
+	SiNo
+		Escribir "El producto de los números multiplos de 5 es ",producto
+	FinSi
+FinAlgoritmo

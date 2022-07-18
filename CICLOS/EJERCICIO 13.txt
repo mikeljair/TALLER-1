@@ -1,0 +1,11 @@
+Algoritmo enteros_de_3_en_3
+	Definir num,suma Como Entero
+	Escribir "los numeros enteros de 3 en 3 son"
+	Para num=2 Hasta 30 Con Paso 3 Hacer
+		Escribir num
+		si num%5=0 Entonces
+			suma=suma+num
+		FinSi
+	Fin Para
+	Escribir "la suma de los numeros divisibles para 5 es ",suma
+FinAlgoritmo
