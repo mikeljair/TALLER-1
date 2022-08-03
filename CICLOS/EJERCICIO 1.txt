@@ -1,7 +1,7 @@
 Algoritmo mostrar_si_un_numero_es_par_o_es_impar
 	Definir num Como Entero
 	num=0
-	Escribir "Ingresar un nummerom
+	Escribir "Ingresar un nummerom"
 	Leer num
 	si num%2=0 Entonces
 		Escribir "El numero ",num," es par"
